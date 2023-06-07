@@ -7,11 +7,13 @@ describe("DemoQA", () => {
     });
 
     it.only("Grid Selection Test", () =>{
+      //Selection
       SelectTestPage.gridLink.click();
       SelectTestPage.numberTwoBox.click();
       SelectTestPage.numberFourBox.click();
       SelectTestPage.numberSixBox.click();
       SelectTestPage.numberEightBox.click();
+      //Validation
       SelectTestPage.numberTwoBox.should("have.class", "active");
       SelectTestPage.numberFourBox.should("have.class", "active");
       SelectTestPage.numberSixBox.should("have.class", "active");
